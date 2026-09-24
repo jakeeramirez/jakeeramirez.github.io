@@ -16,3 +16,6 @@ html{scroll-behavior:smooth}body{background:var(--page);color:var(--ink)}a{color
 
 /* Published preview: one approved color palette and photograph. */
 .theme-switcher,.photo-choice{display:none!important}
+
+/* v6: vertically center About copy beside the photo on desktop. */
+@media(min-width:851px){.about-copy{align-self:center;padding-top:0}}

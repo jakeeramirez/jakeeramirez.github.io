@@ -1,0 +1,1 @@
+Jake Ramirez portfolio V6. Upload the five files in this folder to the root of the GitHub repository jakeeramirez.github.io. Replace existing files and commit changes. The live site updates automatically. The About photo remains race-corner.jpg.
