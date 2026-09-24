@@ -29,3 +29,11 @@ html{scroll-behavior:smooth}body{background:var(--page);color:var(--ink)}a{color
 .about-copy{grid-column:2;grid-row:2;align-self:center;padding-top:0}
 }
 @media(max-width:850px){.about-section{display:flex;flex-direction:column;gap:25px}.about-heading h2{font-size:clamp(36px,4.5vw,59px);line-height:1.1;letter-spacing:-.055em;margin:12px 0 0}.about-photo-study{margin-top:0;width:100%}.about-copy{padding-top:0}}
+
+/* V8 layout repair: two explicit columns, with heading and photo grouped together. */
+.about-section{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:85px;align-items:center;grid-template-rows:none}
+.about-left{grid-column:1;grid-row:1;min-width:0}
+.about-heading{grid-column:auto;grid-row:auto}
+.about-photo-study{grid-column:auto;grid-row:auto;margin-top:35px}
+.about-copy{grid-column:2;grid-row:1;align-self:center;min-width:0;padding-top:0}
+@media(max-width:850px){.about-section{display:flex;flex-direction:column;align-items:stretch;gap:25px}.about-left,.about-copy{width:100%}.about-photo-study{margin-top:25px}.about-copy{align-self:auto}}
