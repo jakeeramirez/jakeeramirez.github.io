@@ -19,3 +19,13 @@ html{scroll-behavior:smooth}body{background:var(--page);color:var(--ink)}a{color
 
 /* v6: vertically center About copy beside the photo on desktop. */
 @media(min-width:851px){.about-copy{align-self:center;padding-top:0}}
+
+/* v7: the heading occupies its own grid row; the copy centers against the photograph, not the heading-plus-photo column. */
+@media(min-width:851px){
+.about-section{grid-template-rows:auto auto;column-gap:85px;row-gap:35px;align-items:start}
+.about-heading{grid-column:1;grid-row:1}
+.about-heading h2{font-size:clamp(36px,4.5vw,59px);line-height:1.1;letter-spacing:-.055em;margin:12px 0 0}
+.about-photo-study{grid-column:1;grid-row:2;margin-top:0}
+.about-copy{grid-column:2;grid-row:2;align-self:center;padding-top:0}
+}
+@media(max-width:850px){.about-section{display:flex;flex-direction:column;gap:25px}.about-heading h2{font-size:clamp(36px,4.5vw,59px);line-height:1.1;letter-spacing:-.055em;margin:12px 0 0}.about-photo-study{margin-top:0;width:100%}.about-copy{padding-top:0}}
