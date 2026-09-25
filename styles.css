@@ -37,3 +37,6 @@ html{scroll-behavior:smooth}body{background:var(--page);color:var(--ink)}a{color
 .about-photo-study{grid-column:auto;grid-row:auto;margin-top:35px}
 .about-copy{grid-column:2;grid-row:1;align-self:center;min-width:0;padding-top:0}
 @media(max-width:850px){.about-section{display:flex;flex-direction:column;align-items:stretch;gap:25px}.about-left,.about-copy{width:100%}.about-photo-study{margin-top:25px}.about-copy{align-self:auto}}
+
+/* Case Study 01 narrative refinements */
+.comparison ul{margin:24px 0 0;padding:0;list-style:none}.comparison li{position:relative;padding:13px 0 13px 26px;margin:0;border-top:1px solid var(--line);font-size:16px;color:#393a36}.comparison li:before{content:'→';position:absolute;left:0;color:var(--accent);font-weight:700}.comparison>div:first-child li:before{content:'×';color:var(--muted)}.model-intro{margin:90px 0 30px;max-width:900px}.model-intro h2{font-size:42px;max-width:900px}.model-intro+.tiers{margin-top:30px}@media(max-width:800px){.model-intro{margin:60px 0 20px}.model-intro h2{font-size:34px}}
